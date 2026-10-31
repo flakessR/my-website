@@ -1,0 +1,99 @@
+* {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono Nerd Font";
+}
+
+body {
+    background-color: #151516;
+}
+
+@font-face {
+    font-family: "JetBrains Mono Nerd Font";
+    src: url("fonts/JetBrainsMonoNerdFont-Regular.ttf");
+}
+
+.flexbox-lay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 140px;
+}
+
+.navigation h2 {
+    margin-bottom: 12px;
+}
+
+
+.navigation a {
+    display: block;
+}
+
+.hai {
+    color: white;
+    margin: 200px 0 10px;
+    font-size: 35px;
+    animation: float-move 3s ease-in-out infinite;
+}
+
+.pg-hai {
+    color: #f9f9f9;
+    animation: float-move 3s ease-in-out infinite;
+    font-size: 18px;
+    text-align: center;
+}
+
+@keyframes float-move {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-19px);
+  }
+}
+
+.sep {
+    color: white;
+    animation: fdmv 1s ease-out 1 both;
+    padding: 70px;
+}
+
+@keyframes fdmv {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.und {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 200px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.und h1 {
+    font-size: 16px;
+}
+
+.und:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}

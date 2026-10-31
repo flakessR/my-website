@@ -1,0 +1,118 @@
+* {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono Nerd Font";
+}
+
+body {
+    background-color: #151516;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "JetBrains Mono Nerd Font";
+    src: url("fonts/JetBrainsMonoNerdFont-Regular.ttf");
+}
+
+.flexbox-lay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    color: white;
+    width: 140px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.navigation h2 {
+    margin-bottom: 12px;
+}
+
+.navigation a {
+    display: block;
+}
+
+.text {
+    animation: fdmv 1s ease-out 1 both;
+}
+
+@keyframes fdmv {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.t1 {
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin: 180px;
+    margin-bottom: 30px;
+}
+
+.explain-con {
+    display: table;
+    width: 100%;
+}
+
+.explain-con a {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.explainR, explainL {
+    display: table-cell;
+}
+
+.explainR {
+    padding-right: 100px;
+}
+
+.explainL {
+    padding-top: 100px;
+}
+
+.explainL p, .explainR p {
+    margin-bottom: 40px;
+}
+
+.t2, .t3 {
+    font-size: 11px;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.t2:hover, .t3:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.t4 {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 300px;
+    animation: fdmv2 1s ease-out 1 both;
+}
+
+@keyframes fdmv2 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
