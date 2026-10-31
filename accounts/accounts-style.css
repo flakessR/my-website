@@ -14,7 +14,7 @@ body {
 
 @font-face {
     font-family: "JetBrains Mono Nerd Font";
-    src: url("fonts/JetBrainsMonoNerdFont-Regular.ttf") format("ttf");
+    src: url("fonts/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -117,5 +117,17 @@ body {
   to {
     opacity: 0.8;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 6px;
+  }
+  a {
+      font-size: 2px;
+  }
+  p {
+      font-size: 2px;
   }
 }
