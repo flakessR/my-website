@@ -100,3 +100,15 @@ body {
     opacity: 1;
     transform: translateY(-10px);
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 6px;
+  }
+  a {
+      font-size: 2px;
+  }
+  p {
+      font-size: 2px;
+  }
+}
