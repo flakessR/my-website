@@ -14,10 +14,7 @@ body {
 
 @font-face {
     font-family: "JetBrains Mono Nerd Font";
-    src: url("./fonts/JetBrainsMonoNerdFont-Regular.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    src: url("./fonts/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
 }
 
 .flexbox-lay {
